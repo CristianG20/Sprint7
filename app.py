@@ -18,11 +18,11 @@ if hist_button:  # Al hacer clic en el botón
 
 
 # Crear boton para construir grafico de dispersion.
-disp_button = st.button('Construir histograma') # crear un botón
+disp_button = st.button('Construir gráfico de dispersión') # crear un botón
         
 if disp_button: # al hacer clic en el botón
     # escribir un mensaje
-    st.write('Creación de un grafico de dispersion para el conjunto de datos del odometro y la venta de coches')
+    st.write('Creación de un gráfico de dispersión para el conjunto de datos del odómetro y la venta de coches')
             
     # crear un grafico de dispersion
     fig = px.sccater(car_data, x="odometer", y = "price")
