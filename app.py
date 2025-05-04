@@ -4,6 +4,15 @@ import plotly.express as px
 
 car_data = pd.read_csv(r'C:\Users\HP\OneDrive\Desktop\Sprint7\vehicles_us.csv')
 
+# Crear un encabezado.
+st.header('Visualización de Vehiculos.')
+
+# Crear un subtítulo para car_data.
+st.subheader('Primero 20 Datos de Vehículos.')
+
+# Creamos una sección para ver el df 'car_data'
+st.dataframe(car_data.head(20))
+
 # Crear un botón para construir el histograma
 hist_button = st.button('Construir histograma')
 
